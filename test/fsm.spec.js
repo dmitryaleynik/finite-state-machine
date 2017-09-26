@@ -1,4 +1,4 @@
-const FSM = require('../src/fsm');
+const FSM = require('../src/fsm.js');
 
 /** Good luck! :) **/
 
@@ -31,7 +31,7 @@ const config = {
     }
 };
 
-describe('FSM', () => {
+describe('fsm', () => {
     describe('#constructor', () => {
         it('throws an exception if config isn\'t passed', () => {
             expect(() => new FSM()).to.throw(Error);
